@@ -1,0 +1,30 @@
+{
+  "name": "magodo-festival",
+  "version": "1.0.0",
+  "description": "website for the 2019 magodo cultural day",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tonerolima/magodo-festival.git"
+  },
+  "author": "Anthony Oyathelemhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tonerolima/magodo-festival/issues"
+  },
+  "homepage": "https://github.com/Tonerolima/magodo-festival#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "next": "^7.0.2",
+    "popper.js": "^1.14.6",
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0"
+  }
+}
