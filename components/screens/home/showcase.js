@@ -8,9 +8,11 @@ const Showcase = () => {
           <h1 className="display-2 mb-0">Magodo Phase 2 Cultural Day</h1>
           <p className="lead">Unity In Diversity</p>
           <div className="address date-address p-2 mx-auto mt-5">
+            <i className="fas fa-map-marker-alt" />
             <span>Supreme Educational Foundation School Sport Field</span>
           </div>
           <div className="date date-address p-2 mx-auto">
+            <i className="fas fa-calendar-alt" />
             <span>19 - 20 April, 2019. 8:00am</span>
           </div>
         </div>
@@ -57,14 +59,20 @@ const Showcase = () => {
             border-left: 14px solid transparent;
             border-right: 0px solid transparent;
           }
-
-          .address > span {
+          .address > span,
+          .fa-map-marker-alt {
             position: absolute;
             bottom: 30px;
             left: 0px;
           }
+          .fa-map-marker-alt {
+            left: 5px;
+          }
+          .fas {
+            font-size: 1.6rem;
+          }
           .date {
-            width: 270px;
+            width: 300px;
             background-color: none;
             top: -3px;
             border-top: 0px transparent;
@@ -73,10 +81,14 @@ const Showcase = () => {
             border-bottom: 50px solid #14a76c;
             margin-top: -35px;
           }
-          .date > span {
+          .date > span,
+          .fa-calendar-alt {
             position: absolute;
             bottom: -40px;
-            left: 10px;
+            left: 40px;
+          }
+          .fa-calendar-alt {
+            left: 5px;
           }
           .overlay {
             background: #27272788;
@@ -85,6 +97,9 @@ const Showcase = () => {
           @media (max-width: 575px) {
             h1 {
               font-size: 3.5rem;
+            }
+            section {
+              height: 100vh;
             }
           }
         `}
