@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavItem from "./nav-item";
-import "../../static/hamburger.css";
+import "../../static/styles/hamburger.css";
 
 const Nav = () => {
   const [menuState, setMenuState] = useState({
@@ -41,10 +41,13 @@ const Nav = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg p-0">
+    <nav className="navbar navbar-expand-lg p-0 fixed-top">
       <div className="container p-0">
         <div className="navbar-brand p-0">
-          <img src="/static/images/logo.png" alt="Magodo cultural day logo" />
+          <img
+            src="https://res.cloudinary.com/tonerolima/image/upload/v1547896858/magodo/logo.png"
+            alt="Magodo cultural day logo"
+          />
         </div>
         <button
           className={`hamburger hamburger--elastic d-lg-none ${
@@ -64,16 +67,26 @@ const Nav = () => {
       <style jsx>
         {`
           .navbar {
-            background-color: #ff70ca;
+            background-color: #272727bb;
           }
           img {
             width: 250px;
             height: 77.5px;
           }
-          .hamburger-inner,
-          .hamburger-inner::before,
+          .hamburger-inner {
+            background-color: #ffe400 !important;
+          }
+
+          .hamburger-inner::before {
+            background-color: #ff652f !important;
+          }
+
           .hamburger-inner::after {
-            background-color: #fff !important;
+            background-color: #14a76c !important;
+          }
+
+          .container {
+            max-width: 1400px;
           }
 
           @media (max-width: 991px) {
@@ -83,29 +96,27 @@ const Nav = () => {
               height: 100vh;
               width: 280px;
               top: 0;
-              background: #fff;
+              background: rgb(20, 167, 108);
+              background: -moz-linear-gradient(
+                top,
+                rgb(20, 167, 108) 8%,
+                rgb(39, 39, 39) 64%
+              );
+              background: -webkit-linear-gradient(
+                top,
+                rgb(20, 167, 108) 8%,
+                rgb(39, 39, 39) 64%
+              );
+              background: linear-gradient(
+                to bottom,
+                rgb(20, 167, 108) 8%,
+                rgb(39, 39, 39) 64%
+              );
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14a76c', endColorstr='#272727',GradientType=0 );
               box-shadow: 2px 0 10px #00000011;
               padding-top: 50px;
               padding-left: 30px;
               transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-              /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+46,0fbfff+100 */
-              background: rgb(254, 255, 255); /* Old browsers */
-              background: -moz-linear-gradient(
-                top,
-                rgb(254, 255, 255) 46%,
-                rgb(15, 191, 255) 100%
-              ); /* FF3.6-15 */
-              background: -webkit-linear-gradient(
-                top,
-                rgb(254, 255, 255) 46%,
-                rgb(15, 191, 255) 100%
-              ); /* Chrome10-25,Safari5.1-6 */
-              background: linear-gradient(
-                to bottom,
-                rgb(254, 255, 255) 46%,
-                rgb(15, 191, 255) 100%
-              ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#0fbfff',GradientType=0 ); /* IE6-9 */
             }
             .nav-collapse.visible {
               left: 0;

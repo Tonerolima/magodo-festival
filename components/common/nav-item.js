@@ -4,23 +4,25 @@ import { withRouter } from "next/router";
 const NavItem = ({ router: { pathname }, text, url }) => {
   const active = pathname === url ? "active" : "";
   return (
-    <li className={`nav-item pl-2 mr-2 ${active}`}>
+    <li className={`nav-item px-2 ${active}`}>
       <Link href={url}>
-        <a className="nav-link py-0">{text}</a>
+        <a className="nav-link">{text}</a>
       </Link>
       <style jsx>
         {`
           a.nav-link {
             text-decoration: none;
             font-size: 1.2rem;
-            color: #fff;
+            color: #747474;
             font-weight: bold;
           }
           a.nav-link:hover {
-            color: #0fbfff22;
+            color: #74747455;
           }
           .nav-item.active {
-            border-left: 4px solid #0fbfff;
+            background-color: #ffe400;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #747474;
           }
           @media (max-width: 991px) {
             a.nav-link {
@@ -29,6 +31,10 @@ const NavItem = ({ router: { pathname }, text, url }) => {
             }
             .nav-item + .nav-item {
               margin-top: 20px;
+            }
+            .nav-item.active {
+              border-top-right-radius: 0px;
+              border-bottom-right-radius: 0px;
             }
           }
         `}

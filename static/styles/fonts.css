@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("/static/fonts/egyptian-nights.woff") format("woff"),
+    /* Modern Browsers */ url("/static/fonts/egyptian-nights.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("/static/fonts/egyptian-nights.woff2")
+      format("woff2"); /* Legacy iOS */
+}
+@import url("https://fonts.googleapis.com/css?family=Coiny|Righteous");
