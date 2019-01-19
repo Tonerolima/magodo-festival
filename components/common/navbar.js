@@ -36,7 +36,7 @@ const Nav = () => {
     ];
 
     return links.map(({ text, url }) => (
-      <NavItem text={text} url={url} key={url} />
+      <NavItem text={text} url={url} key={url} toggleMenu={toggleMenuState} />
     ));
   };
 

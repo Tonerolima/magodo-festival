@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { withRouter } from "next/router";
 
-const NavItem = ({ router: { pathname }, text, url }) => {
+const NavItem = ({ router: { pathname }, text, url, toggleMenu }) => {
   const active = pathname === url ? "active" : "";
   return (
-    <li className={`nav-item px-2 ${active}`}>
+    <li className={`nav-item px-2 ${active}`} onClick={toggleMenu}>
       <Link href={url}>
         <a className="nav-link">{text}</a>
       </Link>
