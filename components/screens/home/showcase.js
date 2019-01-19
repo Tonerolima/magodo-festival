@@ -7,13 +7,19 @@ const Showcase = () => {
         <div className="container h-100 d-flex flex-column justify-content-center text-center">
           <h1 className="display-2 mb-0">Magodo Phase 2 Cultural Day</h1>
           <p className="lead">Unity In Diversity</p>
+          <div className="address date-address p-2 mx-auto mt-5">
+            <span>Supreme Educational Foundation School Sport Field</span>
+          </div>
+          <div className="date date-address p-2 mx-auto">
+            <span>19 - 20 April, 2019. 8:00am</span>
+          </div>
         </div>
       </div>
 
       <style jsx>
         {`
           section {
-            height: 600px;
+            height: 700px;
             background-image: url("https://res.cloudinary.com/tonerolima/image/upload/v1547839024/magodo/main-bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -27,7 +33,6 @@ const Showcase = () => {
           }
           h1 {
             color: #272727;
-            // text-stroke: 2px #ffe400;
             text-shadow: -1px -1px 0 #ffe400, 1px -1px 0 #ffe400,
               -1px 1px 0 #ffe400, 1px 1px 0 #ffe400;
             font-family: "MyWebFont";
@@ -35,10 +40,43 @@ const Showcase = () => {
           .lead {
             font-size: 2.5rem;
             color: #14a76c;
-            // font-weight: bold;
             font-family: "Righteous", cursive;
             text-shadow: -1px -1px 0 #272727, 1px -1px 0 #272727,
               -1px 1px 0 #272727, 1px 1px 0 #272727;
+          }
+          .date-address {
+            position: relative;
+            height: 0px;
+            font-size: 1.2rem;
+            color: #ddd;
+            font-family: "Sarabun", cursive;
+          }
+          .address {
+            width: 310px;
+            border-top: 72px solid #de670b;
+            border-left: 14px solid transparent;
+            border-right: 0px solid transparent;
+          }
+
+          .address > span {
+            position: absolute;
+            bottom: 30px;
+            left: 0px;
+          }
+          .date {
+            width: 270px;
+            background-color: none;
+            top: -3px;
+            border-top: 0px transparent;
+            border-left: 9px solid transparent;
+            border-right: 22px solid transparent;
+            border-bottom: 50px solid #14a76c;
+            margin-top: -35px;
+          }
+          .date > span {
+            position: absolute;
+            bottom: -40px;
+            left: 10px;
           }
           .overlay {
             background: #27272788;
