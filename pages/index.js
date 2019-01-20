@@ -6,6 +6,7 @@ import Showcase from "../components/screens/home/showcase";
 import AboutSection from "../components/screens/home/about";
 import Schedule from "../components/screens/home/schedule";
 import Footer from "../components/common/footer";
+import SponsorshipSection from "../components/screens/home/sponsorship-section";
 
 export default () => {
   return (
@@ -14,6 +15,7 @@ export default () => {
       <Showcase />
       <AboutSection />
       <Schedule />
+      <SponsorshipSection />
       <Footer />
 
       <style>
