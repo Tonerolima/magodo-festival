@@ -2,7 +2,7 @@ import "../../../static/styles/fonts.css";
 
 const ScheduleDateSection = ({ date }) => {
   return (
-    <div className="date-section pt-4 mb-5 px-5">
+    <div className="date-section pt-4 mb-5 px-5 bg-white">
       <p>
         <span className="display-2">{date}</span>
         <span className="h2">

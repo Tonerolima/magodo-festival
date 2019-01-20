@@ -3,12 +3,14 @@ import ScheduleDateSection from "./schedule-date-section";
 
 const Schedule = () => {
   return (
-    <section className="py-5 bg-white text-white">
-      <div className="container pt-5">
-        <h1>Schedule</h1>
-        <p className="underline mb-5" />
-        <ScheduleDateSection date="19 " />
-        <ScheduleDateSection date="20 " />
+    <section>
+      <div className="py-5 overlay w-100 h-100">
+        <div className="container">
+          <h1 className="text-white">Schedule</h1>
+          <p className="underline mb-5" />
+          <ScheduleDateSection date="19 " />
+          <ScheduleDateSection date="20 " />
+        </div>
       </div>
       <style jsx>
         {`
@@ -17,6 +19,15 @@ const Schedule = () => {
             color: #272727;
           }
 
+          section {
+            background: url("https://res.cloudinary.com/tonerolima/image/upload/v1547896709/magodo/main-bg2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          }
+          .overlay {
+            background: rgba(0, 0, 0, 0.7);
+          }
           h1 {
             font-weight: 700;
             font-family: "Sarabun", cursive;
