@@ -7,9 +7,9 @@ const AboutSection = () => {
       <div className="container py-5">
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-6 d-flex flex-column text-right align-items-end">
-            <h2 className="">About the Carnival</h2>
+            <h1>About the Carnival</h1>
             <p className="underline mb-5" />
-            <p className="text">
+            <p className="text mb-5">
               The contemporary and traditional street carnival show will involve
               the display of beautiful costumes by the contingents. This costume
               includes the Western costumes used in carnivals like Notting Hill
@@ -30,7 +30,7 @@ const AboutSection = () => {
               Magodo to promote cultural unity.
             </p>
             <Link href="/about">
-              <button className="btn mb-5">
+              <button className="btn btn-lg mb-5">
                 Read More <i className="fas fa-arrow-right ml-2" />
               </button>
             </Link>
@@ -44,7 +44,7 @@ const AboutSection = () => {
           section {
             font-family: "Sarabun", cursive;
           }
-          h2 {
+          h1 {
             font-weight: 700;
           }
           .underline {
@@ -67,6 +67,10 @@ const AboutSection = () => {
           .btn {
             background-color: #ffe400;
             color: #747474;
+          }
+          .btn:hover {
+            background-color: #747474;
+            color: #ffe400;
           }
         `}
       </style>

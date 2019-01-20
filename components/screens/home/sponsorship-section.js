@@ -43,6 +43,10 @@ const SponsorshipSection = () => {
             background-color: #ffe400;
             color: #747474;
           }
+          .btn:hover {
+            background-color: #747474;
+            color: #ffe400;
+          }
           section {
             font-family: "Sarabun", cursive;
             height: 800px;

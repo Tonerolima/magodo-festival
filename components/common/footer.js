@@ -10,6 +10,21 @@ export default () => {
           </a>
         </p>
       </div>
+
+      <style jsx>
+        {`
+          div {
+            background-color: #272727;
+          }
+          a {
+            color: #fff;
+          }
+          a:hover {
+            text-decoration: none;
+            color: #747474;
+          }
+        `}
+      </style>
     </div>
   );
 };

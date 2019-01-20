@@ -30,7 +30,7 @@ const Nav = () => {
     const links = [
       { text: "Home", url: "/" },
       { text: "About", url: "/about" },
-      { text: "Sponsors", url: "/sponsors" },
+      { text: "Sponsorship", url: "/sponsorship" },
       { text: "Gallery", url: "/gallery" },
       { text: "Contact Us", url: "/contact" }
     ];
