@@ -1,5 +1,3 @@
-import "../../../static/styles/fonts.css";
-
 const ScheduleDateSection = ({ date }) => {
   return (
     <div className="date-section pt-4 mb-5 px-5 bg-white">

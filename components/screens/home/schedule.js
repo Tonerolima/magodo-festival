@@ -1,4 +1,3 @@
-import "../../../static/styles/fonts.css";
 import ScheduleDateSection from "./schedule-date-section";
 
 const Schedule = () => {

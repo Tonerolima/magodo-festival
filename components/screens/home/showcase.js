@@ -1,5 +1,3 @@
-import "../../../static/styles/fonts.css";
-
 const Showcase = () => {
   return (
     <section>

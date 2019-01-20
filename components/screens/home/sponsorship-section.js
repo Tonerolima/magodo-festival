@@ -1,4 +1,3 @@
-import "../../../static/styles/fonts.css";
 import Link from "next/link";
 
 const SponsorshipSection = () => {
