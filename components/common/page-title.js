@@ -1,7 +1,7 @@
-export default () => {
+export default ({ title }) => {
   return (
     <header className="d-flex flex-column align-items-center justify-content-center">
-      <h1 className="text-center display-4">About Us</h1>
+      <h1 className="text-center display-4">{title}</h1>
       <p className="underline" />
       <style jsx>
         {`
@@ -34,6 +34,11 @@ export default () => {
           .underline {
             width: 100px;
             border-bottom: 3px double #de670b;
+          }
+          @media (max-width: 575px) {
+            h1 {
+              font-size: 2.5rem;
+            }
           }
         `}
       </style>

@@ -1,3 +1,5 @@
+import Separator from "../../common/section-separator";
+
 export default () => {
   return (
     <div className="container pb-5 text-justify">
@@ -13,11 +15,7 @@ export default () => {
             celebrate their different cultures while also celebrating each tribe
             for its own unique norms, cultural and moral values.
           </p>
-          <p className="d-flex justify-content-center">
-            <span className="mx-4 separator">.</span>
-            <span className="mx-4 separator">.</span>
-            <span className="mx-4 separator">.</span>
-          </p>
+          <Separator />
           <p className="lead">
             ​Magodo GRA, ranked as the{" "}
             <a
@@ -61,9 +59,6 @@ export default () => {
           a {
             font-style: italic;
             text-decoration: underline;
-          }
-          .separator {
-            font-size: 2rem;
           }
         `}
       </style>
