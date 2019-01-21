@@ -5,7 +5,7 @@ const Intro = () => {
         <p className="lead">
           ​​YOUR BRAND IS YOUR BUSINESS, GROW YOUR BRAND NOW!
         </p>
-        <p>
+        <div>
           <ul className="pl-4">
             <li>
               <i className="fas fa-arrow-right mr-2" />
@@ -20,7 +20,7 @@ const Intro = () => {
               Can your brand come out triumphant in the price war?
             </li>
           </ul>
-        </p>
+        </div>
         <p className="lead">
           ​Grow your operating margins and increase your created shareholder
           value. Your brand goes beyond being a name, its the force behind your

@@ -5,7 +5,7 @@ const Event = () => {
         <h3>​Upcoming Event:</h3>
         <p className="underline mb-4" />
         <h4 className="mb-4">​Magodo Cultural Day 2019</h4>
-        <p className="mb-5">
+        <div className="mb-5">
           <ul className="pl-4">
             <li>
               <i className="fas fa-arrow-right mr-2" />
@@ -33,7 +33,7 @@ const Event = () => {
             </li>
           </ul>
           And lots more.....
-        </p>
+        </div>
         <p>
           <i className="fas fa-map-marker-alt mr-2" />
           <strong>Venue:</strong> Supreme Educational Foundation School
@@ -46,7 +46,7 @@ const Event = () => {
           <i className="far fa-clock mr-2" />
           <strong>Time:</strong> 8:00 am
         </p>
-        <p className="my-5">
+        <div className="my-5">
           <p>
             <strong>
               All residents to pick up their pass at their zonal offices
@@ -64,7 +64,7 @@ const Event = () => {
               selling point for just N500 per ticket to win fantastic prices
             </i>
           </p>
-        </p>
+        </div>
         <p>For traditional costume booking, kindly contact</p>
         <h5 className="mb-3">AFRIQUECON A-Z</h5>
         <p>
