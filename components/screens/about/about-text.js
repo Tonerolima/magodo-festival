@@ -37,13 +37,12 @@ export default () => {
             fashion, entertainment, art, and business. Magodo Cultural day
             brings all these and more to you in the most aesthetically easing
             way possible.
-            <br />
-            <br />​
-            <span className="font-weight-bold">
-              HERE IN MAGODO, WE ARE PROUD TO BE NIGERIANS. UNITY IN DIVERSITY!
-            </span>
           </p>
-          <footer className="blockquote-footer mt-5">
+          <p className="font-weight-bold mt-5">
+            HERE IN MAGODO, WE ARE PROUD OF OUR CULTURE. UNITY IN DIVERSITY!
+          </p>
+          <div className="col-lg-10 mx-auto image mt-5" />
+          <footer className="blockquote-footer mt-2">
             ​Jade Niboro, Chairman Magodo Residents Association
           </footer>
         </div>
@@ -59,6 +58,13 @@ export default () => {
           a {
             font-style: italic;
             text-decoration: underline;
+          }
+          .image {
+            height: 400px;
+            background: url("https://res.cloudinary.com/tonerolima/image/upload/v1548083804/magodo/jade-niboro.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
           }
         `}
       </style>
