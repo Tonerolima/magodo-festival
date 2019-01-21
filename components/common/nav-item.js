@@ -22,7 +22,6 @@ const NavItem = ({ router: { pathname }, text, url, toggleMenu }) => {
           .nav-item.active {
             background-color: #ffe400;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px #747474;
           }
           @media (max-width: 991px) {
             a.nav-link {
@@ -38,7 +37,6 @@ const NavItem = ({ router: { pathname }, text, url, toggleMenu }) => {
             .nav-item.active {
               border-top-right-radius: 0px;
               border-bottom-right-radius: 0px;
-              box-shadow: none;
             }
           }
         `}
