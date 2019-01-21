@@ -13,8 +13,6 @@ export default () => {
       <PageTitle title="Sponsorship & Donations" />
       <SponsorshipText />
       <Footer />
-
-      <style jsx>{``}</style>
     </Page>
   );
 };

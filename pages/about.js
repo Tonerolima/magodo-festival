@@ -13,8 +13,6 @@ export default () => {
       <PageTitle title="About Us" />
       <AboutText />
       <Footer />
-
-      <style jsx>{``}</style>
     </Page>
   );
 };
