@@ -67,7 +67,7 @@ const Nav = () => {
       <style jsx>
         {`
           .navbar {
-            background-color: #272727bb;
+            background-color: rgba(39, 39, 39, 0.733);
           }
           img {
             width: 250px;
@@ -113,17 +113,13 @@ const Nav = () => {
                 rgb(39, 39, 39) 64%
               );
               filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14a76c', endColorstr='#272727',GradientType=0 );
-              box-shadow: 2px 0 10px #00000011;
+              box-shadow: 2px 0 10px rgba(0, 0, 0, 0.67);
               padding-top: 50px;
               padding-left: 30px;
               transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
             }
             .nav-collapse.visible {
               left: 0;
-            }
-            nav.navbar a.nav-link {
-              font-size: 1.5rem;
-              color: #000000ad;
             }
             .nav-item + .nav-item {
               margin-top: 20px;

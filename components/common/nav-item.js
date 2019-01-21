@@ -17,7 +17,7 @@ const NavItem = ({ router: { pathname }, text, url, toggleMenu }) => {
             font-weight: bold;
           }
           a.nav-link:hover {
-            color: #74747455;
+            color: rgba(116, 116, 116, 0.333);
           }
           .nav-item.active {
             background-color: #ffe400;
@@ -26,7 +26,7 @@ const NavItem = ({ router: { pathname }, text, url, toggleMenu }) => {
           @media (max-width: 991px) {
             a.nav-link {
               font-size: 1.5rem;
-              color: #000000ad;
+              color: rgba(0, 0, 0, 0.68);
             }
             .nav-item {
               padding-left: 1rem !important;

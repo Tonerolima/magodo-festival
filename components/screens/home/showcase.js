@@ -23,7 +23,6 @@ const Showcase = () => {
             background-image: url("https://res.cloudinary.com/tonerolima/image/upload/v1547839024/magodo/main-bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
-            // background-attachment: fixed;
             background-position: center;
             border-radius: 0px 0px 138px 0px;
             -moz-border-radius: 0px 0px 138px 0px;
@@ -89,7 +88,7 @@ const Showcase = () => {
             left: 5px;
           }
           .overlay {
-            background: #27272788;
+            background: rgba(39, 39, 39, 0.4);
           }
 
           @media (max-width: 575px) {
