@@ -56,7 +56,7 @@ const Nav = () => {
           type="button"
         >
           <span className="hamburger-box">
-            <span className="hamburger-inner" onClick={toggleMenuState} />
+            <span className="hamburger-inner mt-0" onClick={toggleMenuState} />
           </span>
         </button>
         <div className={`nav-collapse ${menuState.visibleClass}`}>
@@ -123,6 +123,10 @@ const Nav = () => {
             }
             .nav-item + .nav-item {
               margin-top: 20px;
+            }
+            img {
+              width: 207px;
+              height: 65px;
             }
           }
         `}
