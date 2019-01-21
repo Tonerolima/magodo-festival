@@ -29,12 +29,16 @@ const NavItem = ({ router: { pathname }, text, url, toggleMenu }) => {
               font-size: 1.5rem;
               color: #000000ad;
             }
+            .nav-item {
+              padding-left: 1rem !important;
+            }
             .nav-item + .nav-item {
               margin-top: 20px;
             }
             .nav-item.active {
               border-top-right-radius: 0px;
               border-bottom-right-radius: 0px;
+              box-shadow: none;
             }
           }
         `}
