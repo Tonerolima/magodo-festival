@@ -1,4 +1,5 @@
 import { useState } from "react";
+import querystring from "querystring";
 import Label from "./label";
 import InputGroup from "./input-group";
 import Input from "./input";
@@ -11,21 +12,40 @@ const Form = () => {
     phone: "",
     message: ""
   });
+  const [status, setStatus] = useState("");
+  const [error, setError] = useState("");
 
   const handleChange = e => {
     return setState({ ...state, [e.target.name]: e.target.value });
   };
 
+  const reset = () => {
+    setState({
+      firstname: "",
+      lastname: "",
+      email: "",
+      phone: "",
+      message: ""
+    });
+    setStatus("");
+  };
+
   const handleSubmit = e => {
     e.preventDefault();
-    console.log({ ...state });
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", ...state })
-    // })
-    //   .then(() => alert("Success!"))
-    //   .catch(error => alert(error));
+    const body = querystring.stringify({ "form-name": "contact", ...state });
+    fetch("/", {
+      method: "POST",
+      body,
+      headers: { "Content-Type": "application/x-www-form-urlencoded" }
+    })
+      .then(() => {
+        setStatus("sent");
+        setTimeout(() => reset(), 3000);
+      })
+      .catch(error => {
+        setError("Something went wrong, please try again!");
+        setTimeout(() => setError(""), 6000);
+      });
   };
 
   return (
@@ -33,7 +53,6 @@ const Form = () => {
       <form
         action=""
         className="mx-auto col-lg-10"
-        data-netlify="true"
         onSubmit={e => handleSubmit(e)}
       >
         <div className="form-row">
@@ -100,16 +119,30 @@ const Form = () => {
             required={true}
           />
         </div>
-        <button className="btn btn-lg" type="submit">
-          Send
-          <i className="far fa-paper-plane ml-2" />
+        {error ? <p className="form-text text-danger">{error}</p> : null}
+        <button className={`btn btn-lg ${status}`} type="submit">
+          {status ? (
+            <div>
+              Sent
+              <i className="fas fa-check ml-2" />
+            </div>
+          ) : (
+            <div>
+              Send
+              <i className="far fa-paper-plane ml-2" />
+            </div>
+          )}
         </button>
       </form>
       <style jsx>
         {`
-          button[type="submit"] {
+          button {
             background-color: #ffe400;
             color: #747474;
+          }
+          button.sent {
+            background-color: #14a76c;
+            color: #fff;
           }
           .fas,
           .far {
