@@ -56,6 +56,7 @@ const Form = () => {
         onSubmit={e => handleSubmit(e)}
         data-netlify={true}
         name="contact"
+        data-netlify-honeypot="bot-field"
       >
         <div className="form-row">
           <div className="form-group col-md-6">
@@ -121,6 +122,7 @@ const Form = () => {
             required={true}
           />
         </div>
+        <input type="hidden" name="form-name" value="contact" />
         {error ? <p className="form-text text-danger">{error}</p> : null}
         <button className={`btn btn-lg ${status}`} type="submit">
           {status ? (
