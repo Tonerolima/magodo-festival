@@ -54,6 +54,8 @@ const Form = () => {
         action=""
         className="mx-auto col-lg-10"
         onSubmit={e => handleSubmit(e)}
+        data-netlify={true}
+        name="contact"
       >
         <div className="form-row">
           <div className="form-group col-md-6">
