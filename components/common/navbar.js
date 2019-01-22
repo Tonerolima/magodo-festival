@@ -55,8 +55,8 @@ const Nav = () => {
           }`}
           type="button"
         >
-          <span className="hamburger-box">
-            <span className="hamburger-inner mt-0" onClick={toggleMenuState} />
+          <span className="hamburger-box" onClick={toggleMenuState}>
+            <span className="hamburger-inner mt-0" />
           </span>
         </button>
         <div className={`nav-collapse ${menuState.visibleClass}`}>
