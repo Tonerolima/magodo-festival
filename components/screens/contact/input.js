@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-const Input = ({ type, name, placeholder, required }) => {
-  const [value, setValue] = useState("");
+const Input = ({ type, name, placeholder, required, setValue, value }) => {
   const [error, setError] = useState("");
 
   const validate = e => {
@@ -11,10 +10,10 @@ const Input = ({ type, name, placeholder, required }) => {
   };
 
   const listeners = {
-    value,
     name,
+    value,
     required: required || false,
-    onChange: e => setValue(e.target.value),
+    onChange: e => setValue(e),
     onFocus: () => setError(""),
     onBlur: e => validate(e),
     className: `form-control form-control-lg ${error ? "is-invalid" : ""}`
