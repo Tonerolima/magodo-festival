@@ -9,7 +9,7 @@ export default () => {
   return (
     <Page>
       <Nav />
-      <TopSection imageUrl="https://www.lawinsport.com/media/zoo/images/Shaking_hands_with_sunlight_in_background_028d63ee94d171476c865289e34464e4.jpg" />
+      <TopSection imageUrl="https://res.cloudinary.com/tonerolima/image/upload/v1548272797/magodo/Shaking_hands_with_sunlight_in_background_028d63ee94d171476c865289e34464e4.jpg" />
       <PageTitle title="Sponsorship & Donations" />
       <SponsorshipText />
       <Footer />
