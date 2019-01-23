@@ -9,7 +9,7 @@ export default () => {
   return (
     <Page>
       <Nav />
-      <TopSection imageUrl="https://www.israel21c.org/wp-content/uploads/2018/07/israel-sunset-ashkelon-september-1168x657.jpg" />
+      <TopSection imageUrl="https://res.cloudinary.com/tonerolima/image/upload/v1548270917/magodo/magodo-estate-front-gate.jpg" />
       <PageTitle title="About Us" />
       <AboutText />
       <Footer />
