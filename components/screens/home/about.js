@@ -5,28 +5,23 @@ const AboutSection = () => {
     <section className="my-5 text-white">
       <div className="container py-5">
         <div className="row align-items-center justify-content-between">
-          <div className="col-lg-6 d-flex flex-column text-right align-items-end">
+          <div className="col-lg-6 d-flex flex-column text-lg-right align-items-start align-items-lg-end">
             <h1>About the Carnival</h1>
             <p className="underline mb-5" />
-            <p className="text mb-5">
-              The contemporary and traditional street carnival show will involve
-              the display of beautiful costumes by the contingents. This costume
-              includes the Western costumes used in carnivals like Notting Hill
-              carnival, Rio carnival, Trinidad carnival and our own Calabar
-              carnival. The costumes are created with accessories like
-              artificial feathers, glittering accessories, exotic sequence
-              materials of different colours and lots more. All these are
-              combined to bring out the aesthetics created by the designer to
-              make the carnival colorful. The designs are of different shapes
-              and styles like flowing gowns, miniskirts, flamboyant head hats
-              etc.to suite the purpose of the display. The traditional costumes
-              will involve the display of our own indigenous wears here in
-              Nigeria, thereby paying attention to the six Geo-political zones.
-              Difference kinds of dances are displayed as the contingent’s
-              dances to different recorded or live music which could be
-              contemporary or traditional songs. The displays will also involve
-              calisthenics of different formation from street to street within
-              Magodo to promote cultural unity.
+            <p className="text mb-5 lead">
+              ​Diverse community promotes creativity networking and success.
+              Magodo Phase 2 estate represents different backgrounds, languages,
+              ethnicities, cultures, and religions. Our culture outlines our
+              identity and influences our behavior. Celebrating our cultural
+              diversity will make us acknowledge, incorporate and relate with
+              others in the estate. We are embracing our diversity. With this
+              celebration, our interaction level will increase, more exchange of
+              ideas, beliefs and cultural traits et al. We are extending an open
+              arm to other cultures and encouraging a healthy exchange of
+              cultures and our residents. We are learning to understand our
+              beliefs and values better. Come let us make time to appreciate and
+              celebrate our culture. Let the world see the unity in our
+              diversity
             </p>
             <Link href="/about">
               <button className="btn btn-lg mb-5">
