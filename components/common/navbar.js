@@ -31,9 +31,10 @@ const Nav = () => {
       { text: "Home", url: "/" },
       { text: "About", url: "/about" },
       { text: "Sponsorship", url: "/sponsorship" },
-      { text: "Gallery", url: "/gallery" },
       { text: "Contact Us", url: "/contact" }
     ];
+
+    // { text: "Gallery", url: "/gallery" },
 
     return links.map(({ text, url }) => (
       <NavItem text={text} url={url} key={url} toggleMenu={toggleMenuState} />
