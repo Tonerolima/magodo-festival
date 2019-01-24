@@ -8,7 +8,10 @@ const ScheduleDateSection = ({ date }) => {
         </span>
       </p>
       <div className="row">
-        <div className="col-md-6 col-lg-4 mb-5 pl-4">
+        <h3 className="text-center">
+          Content unavailable. Watch this space for updates
+        </h3>
+        {/* <div className="col-md-6 col-lg-4 mb-5 pl-4">
           <i className="far fa-clock mr-2" />
           <h4 className="d-inline">8:00 am</h4>
           <p>
@@ -49,7 +52,7 @@ const ScheduleDateSection = ({ date }) => {
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
           </p>
-        </div>
+        </div> */}
       </div>
       <style jsx>
         {`
