@@ -5,7 +5,7 @@ const NavItem = ({ router: { pathname }, text, url, toggleMenu }) => {
   const active = pathname === url ? "active" : "";
   return (
     <li className={`nav-item px-2 ${active}`} onClick={toggleMenu}>
-      <Link href={url}>
+      <Link prefetch href={url}>
         <a className="nav-link">{text}</a>
       </Link>
       <style jsx>
